@@ -1,22 +1,23 @@
 {
-  "name": "go-cqhttp-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "./src/app.js",
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "nodemon"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^18.15.11",
-    "nodemon": "^2.0.22"
+    "dev": "vite --host",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@types/ws": "^8.5.4",
-    "google-tts-api": "^2.0.2",
-    "sound-play": "^1.1.0",
-    "ws": "^8.13.0"
+    "@vueuse/core": "^10.1.2",
+    "queue": "^7.0.0",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "naive-ui": "^2.34.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vue-tsc": "^1.4.2"
   }
 }

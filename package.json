@@ -1,0 +1,22 @@
+{
+  "name": "go-cqhttp-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "@types/ws": "^8.5.4",
+    "google-tts-api": "^2.0.2",
+    "sound-play": "^1.1.0",
+    "ws": "^8.13.0"
+  }
+}

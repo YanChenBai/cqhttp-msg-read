@@ -103,6 +103,6 @@ servers:
         <<: *default # 引用默认中间件
       post:           # 反向HTTP POST地址列表
   - ws:
-      address: 127.0.0.1:6700
+      address: 0.0.0.0:6700
       middlewares:
         <<: *default # 引用默认中间件

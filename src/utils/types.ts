@@ -1,3 +1,4 @@
+export type LangType = "zh-HK" | "zh-TW" | "ja-JP" | "zh-CN" | "en-US";
 export type PostType = "message" | "request" | "notice" | "meta_event";
 export type MessageType = "private" | "group";
 

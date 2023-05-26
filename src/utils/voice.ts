@@ -60,7 +60,6 @@ export function useSpeechSynthesis(): UseSpeechSynthesisType {
         new Promise<boolean>((resolve, reject) => {
           queueLen.value = queue.length;
           text = text.trim();
-          currentText.value = text;
           if (text.length > 0) {
             const message = new SpeechSynthesisUtterance(text);
             message.lang = lang.value;
@@ -72,6 +71,7 @@ export function useSpeechSynthesis(): UseSpeechSynthesisType {
             message.onerror = () => reject(false);
             if (synth.value !== null) {
               synth.value.speak(message);
+              currentText.value = text;
             } else {
               reject(false);
             }
